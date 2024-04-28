@@ -44,7 +44,7 @@ void inserirArtista(ListaArtistas *lista,  Artista *artista){
         printf("\n                      ********************************");
         printf("\n                      **** Erro ao abrir o arquivo ***");
         printf("\n                      ********************************\n\n");
-        sleep(2);
+        sleep(3);
         system("cls");
         exit(1);
     }
@@ -187,7 +187,7 @@ void removerArtista(ListaArtistas *lista, char *nome){
         lista->artistas = NULL;
     }
     system("cls");
-    printf("                    ----- Artista \"%s\" removido com sucesso! -----\n", nome);
+    printf("\nMENSAGEM: Artista \"%s\" removido com sucesso!\n", nome);
 }
 
 int compararArtistas( void *a,  void *b){
@@ -387,8 +387,8 @@ int menu(void){
                     printf(".");
 
                     system("cls");
-                    printf("\n                      ----- Artista editado com sucesso! -----\n");
-                    sleep(1.5);
+                    printf("\nMENSAGEM: Artista editado com sucesso!\n");
+                    sleep(2);
                     system("cls");
                 }
                 else{
@@ -416,13 +416,13 @@ int menu(void){
                     printf("Local de Nascimento: %s\n", lista.artistas[posicao].local);
                     printf("Albuns:\n%s\n", lista.artistas[posicao].albuns);
                     printf("\n----------------------------\n\n");
-                    sleep(3.5);
+                    sleep(3);
                 }
                 else{
                     printf("\n                      ********************************");
                     printf("\n                      **** Artista nao encontrado ****");
                     printf("\n                      ********************************\n\n");
-                    sleep(1.5);
+                    sleep(3);
                     system("cls");
                 }
                 break;
@@ -448,7 +448,7 @@ int menu(void){
                     printf("\n                      ********************************");
                     printf("\n                      ***** Album nao encontrado *****");
                     printf("\n                      ********************************\n\n");
-                    sleep(1.5);
+                    sleep(3);
                     system("cls");
                 }
                 break;
