@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento de Artistas
 
-Este é um sistema simples de gerenciamento de artistas, onde você pode adicionar, remover, editar, buscar e listar informações sobre artistas e seus álbuns.
+Este é um sistema simples de manipulação de arquivos, onde você pode adicionar, remover, editar, buscar e listar informações sobre artistas e seus álbuns que está dentro de um arquivo.txt.
 
 ## Funcionalidades
 
@@ -15,7 +15,7 @@ Este é um sistema simples de gerenciamento de artistas, onde você pode adicion
 
 Certifique-se de ter um compilador de C instalado em seu sistema. Para compilar os arquivos fonte, utilize o seguinte comando:
 ```
-gcc main.c artistas.c -o gerenciador
+gcc artistas.c -o gerenciador
 ```
 Para executar o programa compilado, utilize:
 ```
@@ -24,9 +24,8 @@ Para executar o programa compilado, utilize:
 
 ## Arquivos
 
-- **main.c:** Contém a função `main()` onde o programa é iniciado e o menu principal é exibido.
-- **artistas.c:** Contém as implementações das funções relacionadas à manipulação de artistas.
-- **artistas.h:** Arquivo de cabeçalho contendo os protótipos das funções e as definições de estruturas utilizadas.
+- **artistas.c:** Contém as implementações das funções relacionadas à manipulação de artistas, juntamente com a função `main()` onde o programa é iniciado e exibido.
+- **artistas.h:** Biblioteca contendo os protótipos das funções e as definições de estruturas utilizadas para este trabalho.
 
 ## Estrutura de Dados
 
